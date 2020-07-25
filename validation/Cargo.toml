@@ -19,24 +19,24 @@ parachain = { package = "polkadot-parachain", path = "../parachain" }
 polkadot-primitives = { path = "../primitives" }
 polkadot-erasure-coding = { path = "../erasure-coding" }
 table = { package = "polkadot-statement-table", path = "../statement-table" }
-grandpa = { package = "sc-finality-grandpa", git = "https://github.com/paritytech/substrate", branch = "master" }
-inherents = { package = "sp-inherents", git = "https://github.com/paritytech/substrate", branch = "master" }
-consensus = { package = "sp-consensus", git = "https://github.com/paritytech/substrate", branch = "master" }
-primitives = { package = "sp-core", git = "https://github.com/paritytech/substrate", branch = "master" }
-txpool-api = { package = "sp-transaction-pool", git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-timestamp = { git = "https://github.com/paritytech/substrate", branch = "master" }
-block-builder = { package = "sc-block-builder", git = "https://github.com/paritytech/substrate", branch = "master" }
-trie = { package = "sp-trie", git = "https://github.com/paritytech/substrate", branch = "master" }
-runtime_primitives = { package = "sp-runtime", git = "https://github.com/paritytech/substrate", branch = "master" }
+grandpa = { package = "sc-finality-grandpa", version = "0.8.0-rc5" }
+inherents = { package = "sp-inherents", version = "2.0.0-rc5" }
+consensus = { package = "sp-consensus", version = "0.8.0-rc5" }
+primitives = { package = "sp-core", version = "2.0.0-rc5" }
+txpool-api = { package = "sp-transaction-pool", version = "2.0.0-rc5" }
+sp-blockchain = "2.0.0-rc5"
+sp-api = "2.0.0-rc5"
+sc-client-api = "2.0.0-rc5"
+sp-timestamp = "2.0.0-rc5"
+block-builder = { package = "sc-block-builder", version = "0.8.0-rc5" }
+trie = { package = "sp-trie", version = "2.0.0-rc5" }
+runtime_primitives = { package = "sp-runtime", version = "2.0.0-rc5" }
 bitvec = { version = "0.17.4", default-features = false, features = ["alloc"] }
-runtime_babe = { package = "pallet-babe", git = "https://github.com/paritytech/substrate", branch = "master" }
-babe-primitives = { package = "sp-consensus-babe", git = "https://github.com/paritytech/substrate", branch = "master" }
-keystore = { package = "sc-keystore", git = "https://github.com/paritytech/substrate", branch = "master" }
-prometheus-endpoint = { package = "substrate-prometheus-endpoint", git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-basic-authorship = { git = "https://github.com/paritytech/substrate", branch = "master" }
+runtime_babe = { package = "pallet-babe", version = "2.0.0-rc5" }
+babe-primitives = { package = "sp-consensus-babe", version = "0.8.0-rc5" }
+keystore = { package = "sc-keystore", version = "2.0.0-rc5" }
+prometheus-endpoint = { package = "substrate-prometheus-endpoint", version = "0.8.0-rc5" }
+sc-basic-authorship = "0.8.0-rc5"
 
 [dev-dependencies]
-sp-keyring = { git = "https://github.com/paritytech/substrate", branch = "master" }
+sp-keyring = "2.0.0-rc5"

@@ -17,26 +17,26 @@ crate-type = ["cdylib", "rlib"]
 log = "0.4.8"
 futures = { version = "0.3.4", features = ["compat"] }
 structopt = "0.3.8"
-sp-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-client-db = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-executor = { git = "https://github.com/paritytech/substrate", branch = "master" }
+sp-api = "2.0.0-rc5"
+sp-core = "2.0.0-rc5"
+sp-runtime = "2.0.0-rc5"
+sc-client-api = "2.0.0-rc5"
+sc-client-db = "0.8.0-rc5"
+sc-executor = "0.8.0-rc5"
 service = { package = "polkadot-service", path = "../service", default-features = false, optional = true }
 service-new = { package = "polkadot-service-new", path = "../node/service", default-features = false, optional = true }
 
 tokio = { version = "0.2.13", features = ["rt-threaded"], optional = true }
-frame-benchmarking-cli = { git = "https://github.com/paritytech/substrate", branch = "master", optional = true }
-sc-cli = { git = "https://github.com/paritytech/substrate", branch = "master", optional = true }
-sc-service = { git = "https://github.com/paritytech/substrate", branch = "master", optional = true }
+frame-benchmarking-cli = { version = "2.0.0-rc5", optional = true }
+sc-cli = { version = "0.8.0-rc5", optional = true }
+sc-service = { version = "0.8.0-rc5", optional = true }
 
 wasm-bindgen = { version = "0.2.57", optional = true }
 wasm-bindgen-futures = { version = "0.4.7", optional = true }
-browser-utils = { package = "substrate-browser-utils", git = "https://github.com/paritytech/substrate", branch = "master", optional = true }
+browser-utils = { package = "substrate-browser-utils", version = "0.8.0-rc5", optional = true }
 
 [build-dependencies]
-substrate-build-script-utils = { git = "https://github.com/paritytech/substrate", branch = "master" }
+substrate-build-script-utils = "2.0.0-rc5"
 
 [features]
 default = [ "wasmtime", "db", "cli", "service-old" ]
